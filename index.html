@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="style.css">
+  <title>Inicio de sesión</title>
+</head>
+<body>
+    <section class="form-register">
+        <h4>Iniciar sesión</h4>
+        <input class="controls" type="email" name="correo" id="correo" placeholder="Ingrese su Correo">
+        <input class="controls" type="password" name="password" id="password" placeholder="Ingrese su Contraseña">
+        <p>Estoy de acuerdo con <a href="#">Términos y Condiciones</a></p>
+        <input class="botons" type="button" value="Iniciar" id="iniciarBtn">
+      </section>
+    
+    <script>
+      // Redirección para el botón "Iniciar"
+      document.getElementById('iniciarBtn').addEventListener('click', function() {
+        window.location.href = "inicio.html";  // Cambia "inicio.html" a la página de destino que desees
+      });
+
+      // Redirección para el enlace "¿Ya tengo Cuenta?"
+      document.getElementById('yaTengoCuenta').addEventListener('click', function(event) {
+        event.preventDefault(); // Evita la acción por defecto del enlace
+        window.location.href = "inicio.html";  // Cambia "inicio.html" a la página de destino que desees
+      });
+    </script>
+
+</body>
+</html>
+
